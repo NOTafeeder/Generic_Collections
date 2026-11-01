@@ -8,7 +8,7 @@ namespace Generic_Collections.Models
     {
         public static bool CheckEqual(T item, T item2)
         {
-            return true;
+            return EqualityComparer<T>.Default.Equals(item, item2);
         }
     }
 }
